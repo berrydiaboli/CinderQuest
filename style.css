@@ -69,6 +69,17 @@ html {
     max-height:100%;
 }
 
+/* Wowee! button animations! */
+.animatedbuttons {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.animatedbuttons:hover {
+    transform: scale(1.1);
+}
+
 .logogroup {
     position: absolute;
     display: grid;
