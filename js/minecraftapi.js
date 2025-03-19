@@ -22,7 +22,7 @@ async function getPlayerCount(serverUrl = "mc.cinderquest.net") {
         document.getElementById("player-count").innerHTML = `<span style="color: #a8a8a8;">${data.players.online}</span><span style="color: #545454;">/<span><span style="color: #a8a8a8;">${data.players.max}</span>`;
 
         // Update the mc-version div
-        document.getElementById("mc-version").textContent = data.protocol.name;
+        document.getElementById("mc-version").innerHTML = `<span style="color:rgb(255, 238, 0);">Server<br>Version:</span><br>${data.protocol.name}`;
 
         // Update the mc-icon img
         document.getElementById("mc-icon").src = data.icon;

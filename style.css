@@ -12,6 +12,9 @@ body {
     background-size: 32px;
     background-blend-mode:hue;
     image-rendering: pixelated;
+    margin: 0;
+    padding: 0;
+    font-family: minecraftfont;
 }
 
 /* HEADER */
@@ -19,6 +22,8 @@ body {
 header {
     position: fixed;
     z-index: 5;
+    top: 7px;
+    left: 7px;
 }
 
 header > img {
@@ -45,7 +50,8 @@ nav {
     background-size: 32px;
     image-rendering: pixelated;
     z-index: 4;
-    filter: drop-shadow(0 15px 8px #5f2c0080);
+    box-shadow: inset 0px -4px 0px rgba(122, 122, 122, 0.267);
+    filter: drop-shadow(0 4px #00000044);
 }
 
 nav > ul {
@@ -62,12 +68,46 @@ nav > ul {
 
 nav > ul li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
-nav a {
-    color: white;
+nav > a {
     text-decoration: none;
+}
+
+nav button {
+    appearance: none;
+    color:white;
+    padding: 9px;
+    text-shadow: 1.6px 1.6px 0 #3e3e3e;
+    font-family: minecraftfont;
+    background-color: black;
+    background-image: url(./img/center-button.png);
+    background-repeat: repeat-x;
+    background-size: auto 113.2%;
+    image-rendering: crisp-edges;
+    background-position: center;
+    border-image: url(./img/button.png) 10 / 20px;
+}
+
+nav button:hover {
+
+    background-image: url(./img/center-button-selected.png);
+    background-repeat: repeat-x;
+    background-size: auto 113.2%;
+    image-rendering: crisp-edges;
+    background-position: center;
+    border-image: url(./img/button-highlighted.png) 10 / 20px;
+}
+
+nav button:active {
+    background-color: black;
+    background-image: url(./img/center-button-disabled.png);
+    background-repeat: repeat-x;
+    background-size: auto 113.2%;
+    image-rendering: crisp-edges;
+    background-position: center;
+    border-image: url(./img/button-disabled.png) 10 / 20px;
 }
 
 /* Main */
@@ -75,14 +115,83 @@ nav a {
 main {
     background-color: rgba(0, 0, 0, 0.565);
     position: relative;
-    height: 100vw;
+    min-height: calc(100vh - 100px);
     width: 75%;
     padding: 10px;
+    padding-bottom: 80px;
     margin-top: 10px;
     top: 60px;
     margin-left: auto;
     margin-right: auto; 
     z-index: 3;
     color:rgb(255, 255, 255);
-    font-family: minecraftfont;
+    text-shadow: 1.6px 1.6px 0 #3e3e3e;
+}
+
+/* Footer */
+
+footer {
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 120px;
+    min-height: 80px;
+    width: 100%;
+    background-image: 
+        linear-gradient(rgba(183, 85, 15, 0.363),rgba(0, 0, 0, 0)),
+        url(./img/coal_block.png);
+    background-size: 32px;
+    image-rendering: pixelated;
+    position: relative;
+    z-index: 5;
+    box-shadow: inset 0px 4px 0px rgba(122, 122, 122, 0.267);
+    filter: drop-shadow(0 -4px #00000044);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color:rgba(255, 255, 255, 0.401)
+}
+
+/* Servers */
+
+.server-listing {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.server-description {
+    padding: 10px;
+    margin: 0;
+    background-color: #3e3e3e3e;
+}
+
+.server-description > img {
+    max-width: 500px;
+    min-width: 300px;
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.server-description > p > a{
+    text-decoration: none;
+    color:rgb(0, 128, 255);
+    text-shadow: 1.6px 1.6px 0 rgba(0, 128, 255, 0.4);
+}
+
+.cinderquest-server-header {
+    text-align: center;
+    text-shadow: 0px 0px 16px #adadad5a;
+    background-image: linear-gradient(rgb(255, 81, 0), rgb(14, 119, 75));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
