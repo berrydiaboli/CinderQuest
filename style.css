@@ -7,9 +7,9 @@
 
 
 body {
-    background-color: rgba(0, 0, 0, 0.729);
     background-image: url(./img/crimson_nylium.png);
     background-size: 32px;
+    background-blend-mode: hue;
     image-rendering: pixelated;
     margin: 0;
     padding: 0;
