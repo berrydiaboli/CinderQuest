@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "MinecraftFont";
+    src: 
+        local("MinecraftFont"),
+        url(fonts/Minecraft-Seven_v2.ttf);
+}
+
+.mc-banner {
+    background-color: rgba(240, 248, 255, 0.292);
+    max-width: 500px;
+    min-width: 486px;
+    max-height: 64px;
+    min-height: 64px;
+    font-family: MinecraftFont;
+    position: relative;
+    display: inline-block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.mc-icon {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.server-name {
+    color: white;
+    position: absolute;
+    left: 66px;
+    top: 8px;
+    font-size: 16px;
+    text-shadow: 1.6px 1.6px 0 #3e3e3e;
+}
+
+.server-ping {
+    position: absolute;
+    top: 9px;
+    right: 6px;
+    height: 16px;
+    width: 16px;
+}
+
+.mc-motd {
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    max-width: 536px;
+    min-width: 536px;
+    text-shadow: 1.6px 1.6px 0 #3e3e3ea2;
+}
+
+.mc-player-count {
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    font-size: 16px;
+    text-shadow: 1.6px 1.6px 0 #3e3e3e;
+    text-align: right;
+}
