@@ -7,7 +7,7 @@
 
 
 body {
-    background-image: url(./img/crimson_nylium.png);
+    background-image: url(img/background.png);
     background-size: 32px;
     background-blend-mode: hue;
     image-rendering: pixelated;
@@ -45,7 +45,7 @@ nav {
     justify-content: center; 
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0), rgba(183, 85, 15, 0.363)),
-        url(./img/coal_block.png);
+        url(img/nav-background.png);
     background-size: 32px;
     image-rendering: pixelated;
     z-index: 4;
@@ -81,32 +81,32 @@ nav button {
     text-shadow: 1.6px 1.6px 0 #3e3e3e;
     font-family: minecraftfont;
     background-color: black;
-    background-image: url(./img/center-button.png);
+    background-image: url(img/center-button.png);
     background-repeat: repeat-x;
     background-size: auto 113.2%;
     image-rendering: crisp-edges;
     background-position: center;
-    border-image: url(./img/button.png) 10 / 20px;
+    border-image: url(img/button.png) 10 / 20px;
 }
 
 nav button:hover {
 
-    background-image: url(./img/center-button-selected.png);
+    background-image: url(img/center-button-selected.png);
     background-repeat: repeat-x;
     background-size: auto 113.2%;
     image-rendering: crisp-edges;
     background-position: center;
-    border-image: url(./img/button-highlighted.png) 10 / 20px;
+    border-image: url(img/button-highlighted.png) 10 / 20px;
 }
 
 nav button:active {
     background-color: black;
-    background-image: url(./img/center-button-disabled.png);
+    background-image: url(img/center-button-disabled.png);
     background-repeat: repeat-x;
     background-size: auto 113.2%;
     image-rendering: crisp-edges;
     background-position: center;
-    border-image: url(./img/button-disabled.png) 10 / 20px;
+    border-image: url(img/button-disabled.png) 10 / 20px;
 }
 
 /* Main */
@@ -139,7 +139,7 @@ footer {
     width: 100%;
     background-image: 
         linear-gradient(rgba(183, 85, 15, 0.363),rgba(0, 0, 0, 0)),
-        url(./img/coal_block.png);
+        url(img/nav-background.png);
     background-size: 32px;
     image-rendering: pixelated;
     position: relative;
