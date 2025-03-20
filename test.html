@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #skinContainer {
+            width: 100%;
+            max-width: 100px;
+            max-height: 150px;
+            margin: 0 auto;
+        }
+        canvas {
+            max-width: 100px;
+            max-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="skinContainer">
+        <canvas></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/InventivetalentDev/MineRender@1.4.6/dist/skin.min.js"></script>
+
+    <script>
+        // Initialize MineRender with options
+        var skinRender = new SkinRender({
+            rotation: 0,
+            zoom: 1
+        }, document.getElementById("skinContainer"));
+
+        // Render the skin
+        skinRender.render("Berry_Diaboli").catch(error => {
+            console.error('Failed to load skin:', error);
+        });
+    </script>
+</body>
+</html>

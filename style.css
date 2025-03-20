@@ -194,3 +194,44 @@ footer {
             background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* Staff */
+
+.Staff-User {
+    background-color: #3e3e3e3e;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.Staff-Skin {
+    background-color: rgba(0, 255, 255, 0.418);
+    text-align: center;
+    width: 150px;
+    height: 220px;
+}
+
+.Staff-Skin > img {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    background-color: #3e3e3e;
+}
+
+.Skin-Box {
+    background-color: #3e3e3e;
+}
+
+
+.Skin-Box > canvas {
+    max-width: 117px;
+    max-height: 141px;
+    background-color: #93939364;
+}
+
+.Staff-Description {
+    background-color: rgba(240, 248, 255, 0.473);
+    width: calc(100% - 120px);
+    height: 220px;
+}
