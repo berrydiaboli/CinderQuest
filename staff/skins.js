@@ -16,8 +16,8 @@ const baseConfig = {
         target: [0, 17, 0]
     },
     canvas: {
-        width: undefined,
-        height: undefined
+        width: 117, // Set specific dimensions
+        height: 141
     },
     pauseHidden: true
 };
