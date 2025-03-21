@@ -28,12 +28,30 @@ var Berry_Diaboli = new SkinRender(baseConfig, document.getElementById("Berry_Di
 var TheKing1543 = new SkinRender(baseConfig, document.getElementById("TheKing1543"));
 var Crazydiamonde2 = new SkinRender(baseConfig, document.getElementById("Crazydiamonde2"));
 var TheGibbous = new SkinRender(baseConfig, document.getElementById("TheGibbous"));
+var SuperKirbylover = new SkinRender(baseConfig, document.getElementById("SuperKirbylover"));
+var Mochi_Toki = new SkinRender(baseConfig, document.getElementById("Mochi_Toki"));
+
 
 // Render the skin
 
-Berry_Diaboli.render("Berry_Diaboli");
-TheKing1543.render("TheKing1543");
-Crazydiamonde2.render("Crazydiamonde2");
-TheGibbous.render("TheGibbous");
+async function renderAllPlayers() {
+    const players = [
+        { player: Berry_Diaboli, name: "Berry_Diaboli" },
+        { player: TheKing1543, name: "TheKing1543" },
+        { player: Crazydiamonde2, name: "Crazydiamonde2" },
+        { player: TheGibbous, name: "TheGibbous" },
+        { player: SuperKirbylover, name: "SuperKirbylover" },
+        { player: Mochi_Toki, name: "Mochi_Toki" }
+    ];
+
+    for (const { player, name } of players) {
+        console.log(`Rendering ${name}...`);
+        await player.render(name);
+        console.log(`Finished rendering ${name}`);
+        await new Promise(resolve => setTimeout(resolve, 200));
+    }
+}
+
+renderAllPlayers();
 
 
