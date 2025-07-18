@@ -25,7 +25,6 @@ const baseConfig = {
 // Initialize MineRender per individual with the config ever
 
 var Berry_Diaboli = new SkinRender(baseConfig, document.getElementById("Berry_Diaboli"));
-var TheKing1543 = new SkinRender(baseConfig, document.getElementById("TheKing1543"));
 var Crazydiamonde2 = new SkinRender(baseConfig, document.getElementById("Crazydiamonde2"));
 var TheGibbous = new SkinRender(baseConfig, document.getElementById("TheGibbous"));
 var SuperKirbylover = new SkinRender(baseConfig, document.getElementById("SuperKirbylover"));
@@ -37,7 +36,6 @@ var Mochi_Toki = new SkinRender(baseConfig, document.getElementById("Mochi_Toki"
 async function renderAllPlayers() {
     const players = [
         { player: Berry_Diaboli, name: "Berry_Diaboli" },
-        { player: TheKing1543, name: "TheKing1543" },
         { player: Crazydiamonde2, name: "Crazydiamonde2" },
         { player: TheGibbous, name: "TheGibbous" },
         { player: SuperKirbylover, name: "SuperKirbylover" },
