@@ -22,13 +22,17 @@ const baseConfig = {
     pauseHidden: true
 };
 
-// Initialize MineRender per individual with the config ever
+// Initialize MineRender per individual with the config
 
 var Berry_Diaboli = new SkinRender(baseConfig, document.getElementById("Berry_Diaboli"));
 var Crazydiamonde2 = new SkinRender(baseConfig, document.getElementById("Crazydiamonde2"));
 var TheGibbous = new SkinRender(baseConfig, document.getElementById("TheGibbous"));
 var SuperKirbylover = new SkinRender(baseConfig, document.getElementById("SuperKirbylover"));
 var Mochi_Toki = new SkinRender(baseConfig, document.getElementById("Mochi_Toki"));
+var M0nstahMan = new SkinRender(baseConfig, document.getElementById("M0nstahMan"));
+var LuxThePr0t0 = new SkinRender(baseConfig, document.getElementById("LuxThePr0t0"));
+var Simonisnear = new SkinRender(baseConfig, document.getElementById("Simonisnear"));
+
 
 
 // Render the skin
@@ -39,7 +43,10 @@ async function renderAllPlayers() {
         { player: Crazydiamonde2, name: "Crazydiamonde2" },
         { player: TheGibbous, name: "TheGibbous" },
         { player: SuperKirbylover, name: "SuperKirbylover" },
-        { player: Mochi_Toki, name: "Mochi_Toki" }
+        { player: Mochi_Toki, name: "Mochi_Toki" },
+        { player: Simonisnear, name: "Simonisnear" },
+        { player: LuxThePr0t0, name: "LuxThePr0t0" },
+        { player: M0nstahMan, name: "M0nstahMan" }
     ];
 
     for (const { player, name } of players) {
